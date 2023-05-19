@@ -1,0 +1,41 @@
+@import 'variables';
+
+.promo {
+    margin-bottom: 250px;
+    background: url('./../../../../../assets/images/pizza_big.png') center right no-repeat;
+
+    @media screen and (max-width: $desktop) {
+        background-size: 500px;
+    }
+
+    @media screen and (max-width: $tablet) {
+        background-image: none;
+    }
+}
+
+.promo__title {
+    font-size: 45px;
+    font-weight: 800;
+    line-height: 55px;
+    margin-bottom: 60px;
+    color: $brown;
+}
+
+.promo__sub-title {
+    color: $yellow;
+}
+
+.promo__items {
+    display: flex;
+    flex-wrap: wrap;
+    gap: 45px;
+    margin-bottom: 60px;
+}
+
+.promo__item {
+    width: 305px;
+}
+
+.promo__button {
+    width: 224px;
+}

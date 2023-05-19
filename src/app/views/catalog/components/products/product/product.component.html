@@ -1,0 +1,8 @@
+<div class="product">
+    <div class="product__content">
+        <img class="product__image" [src]="product.imageUrl" [alt]="product.title" (click)="onOpenImage()" />
+        <p class="product__title text-center">{{ product.title }}</p>
+        <p class="product__description text-center">{{ product.description }}</p>
+    </div>
+    <button class="product__button" itButton>В корзину</button>
+</div>

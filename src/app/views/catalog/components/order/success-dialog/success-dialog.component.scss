@@ -1,0 +1,53 @@
+@import 'variables';
+
+.success {
+    display: block;
+    width: 400px;
+}
+
+.success__title {
+    font-size: 18px;
+    font-weight: 700;
+    color: $brown-dark;
+    text-align: center;
+    margin-bottom: 12px;
+}
+
+.success__content {
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    color: green;
+}
+
+.order {
+    width: 100%;
+    padding: 0;
+    margin-top: 12px;
+    list-style-type: none;
+    font-size: 16px;
+    line-height: 24px;
+    color: $gray;
+}
+
+.order__item {
+    display: flex;
+    align-items: baseline;
+
+    &:not(:last-of-type) {
+        margin-bottom: 12px;
+    }
+
+    &::before {
+        flex-grow: 1;
+        order: 2;
+        border-bottom: 1px dashed #ccc;
+        content: '';
+        margin: 0 5px;
+    }
+}
+
+.order__value {
+    order: 3;
+}

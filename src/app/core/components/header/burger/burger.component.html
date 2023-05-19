@@ -1,0 +1,9 @@
+<div class="burger">
+    <button class="burger__button" [class.burger__button_toggled]="toggle" (click)="onToggle()"><span></span></button>
+    <div class="burger__menu" *ngIf="toggle">
+        <a class="burger__item" routerLink="/">Пиццы</a>
+        <a class="burger__item" routerLink="/">Напитки</a>
+        <a class="burger__item" routerLink="/">Доставка и оплата</a>
+        <a class="burger__item" routerLink="/">Контакты</a>
+    </div>
+</div>

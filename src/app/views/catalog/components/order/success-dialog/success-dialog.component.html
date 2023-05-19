@@ -1,0 +1,26 @@
+<it-dialog class="success">
+    <p class="success__title" itDialogTitle>Спасибо за заказ</p>
+    <div class="success__content" itDialogContent>
+        <it-svg-icon name="success"></it-svg-icon>
+        <ul class="success__order order">
+            <li class="order__item">
+                Имя: <span class="order__value">{{ data.userName }}</span>
+            </li>
+            <li class="order__item">
+                Адрес: <span class="order__value">{{ data.address }}</span>
+            </li>
+            <li class="order__item">
+                Телефон: <span class="order__value">{{ data.phone }}</span>
+            </li>
+            <li class="order__item">
+                Пицца: <span class="order__value">{{ data.pizza }}</span>
+            </li>
+            <li class="order__item">
+                Количество: <span class="order__value">{{ data.quantity }}</span>
+            </li>
+            <li class="order__item">
+                Цена: <span class="order__value">{{ data.price }}</span>
+            </li>
+        </ul>
+    </div>
+</it-dialog>

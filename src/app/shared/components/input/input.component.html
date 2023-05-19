@@ -1,0 +1,13 @@
+<div class="input">
+    <input
+        class="input__control"
+        [itRemoveDot]="true"
+        [ngModel]="value"
+        [type]="type"
+        [mask]="mask"
+        [prefix]="prefixValue"
+        [placeholder]="label"
+        (input)="onInput($event)"
+        (blur)="onMarkAsTouched()"
+    />
+</div>
