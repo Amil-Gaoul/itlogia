@@ -1,7 +1,0 @@
-<div class="products container">
-    <div class="row">
-        <div class="products__item col col-3 col-t-4 col-m-4" *ngFor="let product of products | async; let i = index">
-            <it-product [product]="product" (viewImage)="onViewImage(i)"></it-product>
-        </div>
-    </div>
-</div>
