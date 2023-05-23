@@ -14,9 +14,9 @@ import { IconRegistryService } from './../../../core/services';
                 display: inline-block;
                 color: inherit;
             }
-        `,
+        `
     ],
-    changeDetection: ChangeDetectionStrategy.OnPush,
+    changeDetection: ChangeDetectionStrategy.OnPush
 })
 export class SvgIconComponent {
     @Input() public set name(iconName: string) {

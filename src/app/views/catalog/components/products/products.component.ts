@@ -14,7 +14,7 @@ import { ProductService } from './../../../../core/services';
     imports: [CommonModule, LightboxModule, ProductComponent],
     templateUrl: './products.component.html',
     styleUrls: ['./products.component.scss'],
-    changeDetection: ChangeDetectionStrategy.OnPush,
+    changeDetection: ChangeDetectionStrategy.OnPush
 })
 export class ProductsComponent {
     public products: Observable<Product[]> = this.productsService.getProducts().pipe(

@@ -5,7 +5,7 @@ import { Inject, Injectable, Optional } from '@angular/core';
 import { Observable, of, map } from 'rxjs';
 
 @Injectable({
-    providedIn: 'root',
+    providedIn: 'root'
 })
 export class IconRegistryService {
     private svgIconConfigs: Map<string, SVGElement> = new Map<string, SVGElement>();

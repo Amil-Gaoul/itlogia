@@ -12,7 +12,7 @@ import { Order } from 'src/app/core/models';
     imports: [CommonModule, DialogComponent, SvgIconComponent],
     templateUrl: './success-dialog.component.html',
     styleUrls: ['./success-dialog.component.scss'],
-    changeDetection: ChangeDetectionStrategy.OnPush,
+    changeDetection: ChangeDetectionStrategy.OnPush
 })
 export class SuccessDialogComponent {
     constructor(@Inject(DIALOG_DATA) public data: Order) {}

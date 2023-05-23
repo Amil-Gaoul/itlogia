@@ -7,7 +7,7 @@ import { Product } from '../models';
 import { DELAY } from '../constants';
 
 @Injectable({
-    providedIn: 'root',
+    providedIn: 'root'
 })
 export class ProductService {
     constructor(private httpClient: HttpClient) {}

@@ -14,7 +14,7 @@ import { ButtonComponent } from './../../../../shared/components';
     imports: [CommonModule, PromoItemComponent, ButtonComponent],
     templateUrl: './promo.component.html',
     styleUrls: ['./promo.component.scss'],
-    changeDetection: ChangeDetectionStrategy.OnPush,
+    changeDetection: ChangeDetectionStrategy.OnPush
 })
 export class PromoComponent {
     public promos: Observable<Promo[]> = this.promoService.getPromo();

@@ -2,7 +2,7 @@ import { Directive, EventEmitter, HostListener, Input } from '@angular/core';
 
 @Directive({
     selector: '[itRemoveDot]',
-    standalone: true,
+    standalone: true
 })
 export class RemoveDotDirective {
     @Input('itRemoveDot') public isRemove: boolean = false;

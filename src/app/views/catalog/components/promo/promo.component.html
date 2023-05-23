@@ -3,11 +3,11 @@
         <div class="col col-7 col-t-4 col-m-4">
             <div class="promo__title">Самая вкусная пицца в мире<br /><span class="promo__sub-title">только в Pizza Cheff</span></div>
             <div class="promo__items">
-                <div class="promo__item" *ngFor="let promo of promos | async">
+                <div *ngFor="let promo of promos | async" class="promo__item">
                     <it-promo-item class="promo__item" [promo]="promo"></it-promo-item>
                 </div>
             </div>
-            <button class="promo__button" itButton>Выбрать пиццу</button>
+            <button itButton class="promo__button">Выбрать пиццу</button>
         </div>
     </div>
 </div>

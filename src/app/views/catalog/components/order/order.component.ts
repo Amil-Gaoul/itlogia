@@ -18,7 +18,7 @@ import { SuccessDialogComponent } from './success-dialog/success-dialog.componen
     imports: [CommonModule, InputComponent, ButtonComponent, FormsModule, ReactiveFormsModule, DialogModule],
     templateUrl: './order.component.html',
     styleUrls: ['./order.component.scss'],
-    changeDetection: ChangeDetectionStrategy.OnPush,
+    changeDetection: ChangeDetectionStrategy.OnPush
 })
 export class OrderComponent implements OnInit {
     public form: FormGroup<OrderForm>;
@@ -31,7 +31,7 @@ export class OrderComponent implements OnInit {
         this.form = this.formBuilder.group({
             name: ['', [Validators.required]],
             address: ['', [Validators.required]],
-            phone: ['', [Validators.required]],
+            phone: ['', [Validators.required]]
         });
     }
 
@@ -41,7 +41,7 @@ export class OrderComponent implements OnInit {
             const order: Partial<Order> = {
                 userName: this.form.get('name').value,
                 address: this.form.get('address').value,
-                phone: this.form.get('phone').value,
+                phone: this.form.get('phone').value
             };
             this.orderService
                 .orderPizza(order)

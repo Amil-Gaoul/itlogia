@@ -13,6 +13,6 @@ import { ProductsComponent } from './components/products/products.component';
     imports: [CommonModule, PromoComponent, OrderComponent, ProductsComponent],
     templateUrl: './catalog.component.html',
     styleUrls: ['./catalog.component.scss'],
-    changeDetection: ChangeDetectionStrategy.OnPush,
+    changeDetection: ChangeDetectionStrategy.OnPush
 })
 export class CatalogComponent {}

@@ -10,7 +10,7 @@ import { ButtonComponent } from '../../../../../shared/components';
     imports: [CommonModule, ButtonComponent],
     templateUrl: './product.component.html',
     styleUrls: ['./product.component.scss'],
-    changeDetection: ChangeDetectionStrategy.OnPush,
+    changeDetection: ChangeDetectionStrategy.OnPush
 })
 export class ProductComponent {
     @Input() public product: Product;

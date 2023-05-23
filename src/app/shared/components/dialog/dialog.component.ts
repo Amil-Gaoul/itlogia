@@ -8,7 +8,7 @@ import { DialogRef } from '@angular/cdk/dialog';
     imports: [CommonModule],
     templateUrl: './dialog.component.html',
     styleUrls: ['./dialog.component.scss'],
-    changeDetection: ChangeDetectionStrategy.OnPush,
+    changeDetection: ChangeDetectionStrategy.OnPush
 })
 export class DialogComponent {
     constructor(private dialogRef: DialogRef) {}

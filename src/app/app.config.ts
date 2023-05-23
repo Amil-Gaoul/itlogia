@@ -5,5 +5,5 @@ import { provideRouter } from '@angular/router';
 import { routes } from './app.routes';
 
 export const APP_CONFIG: ApplicationConfig = {
-    providers: [provideRouter(routes), provideHttpClient()],
+    providers: [provideRouter(routes), provideHttpClient()]
 };

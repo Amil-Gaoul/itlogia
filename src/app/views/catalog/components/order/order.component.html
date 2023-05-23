@@ -16,18 +16,18 @@
             <div class="col col-4 col-t-4 col-m-4">
                 <form class="order__form" [formGroup]="form">
                     <div class="order__row">
-                        <it-input [label]="'Ваше имя'" [removeDot]="true" formControlName="name"></it-input>
-                        <div class="order__error" *ngIf="isError('name')">Поле обязательно для заполнения</div>
+                        <it-input formControlName="name" [label]="'Ваше имя'" [removeDot]="true"></it-input>
+                        <div *ngIf="isError('name')" class="order__error">Поле обязательно для заполнения</div>
                     </div>
                     <div class="order__row">
-                        <it-input [label]="'Адрес доставки'" formControlName="address"></it-input>
-                        <div class="order__error" *ngIf="isError('address')">Поле обязательно для заполнения</div>
+                        <it-input formControlName="address" [label]="'Адрес доставки'"></it-input>
+                        <div *ngIf="isError('address')" class="order__error">Поле обязательно для заполнения</div>
                     </div>
                     <div class="order__row">
-                        <it-input [label]="'Телефон'" formControlName="phone" prefix="+7" mask="(000) 000-0000"></it-input>
-                        <div class="order__error" *ngIf="isError('address')">Поле обязательно для заполнения</div>
+                        <it-input formControlName="phone" prefix="+7" mask="(000) 000-0000" [label]="'Телефон'"></it-input>
+                        <div *ngIf="isError('address')" class="order__error">Поле обязательно для заполнения</div>
                     </div>
-                    <button (click)="onDelivery()" itButton>Оформить заказ</button>
+                    <button itButton (click)="onDelivery()">Оформить заказ</button>
                 </form>
             </div>
         </div>

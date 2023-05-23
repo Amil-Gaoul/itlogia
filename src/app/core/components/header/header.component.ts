@@ -9,6 +9,6 @@ import { BurgerComponent } from './burger/burger.component';
     imports: [CommonModule, BurgerComponent],
     templateUrl: './header.component.html',
     styleUrls: ['./header.component.scss'],
-    changeDetection: ChangeDetectionStrategy.OnPush,
+    changeDetection: ChangeDetectionStrategy.OnPush
 })
 export class HeaderComponent {}

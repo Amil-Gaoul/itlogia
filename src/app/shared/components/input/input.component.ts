@@ -14,12 +14,12 @@ import { RemoveDotDirective } from '../../directives';
         {
             provide: NG_VALUE_ACCESSOR,
             useExisting: InputComponent,
-            multi: true,
-        },
+            multi: true
+        }
     ],
     templateUrl: './input.component.html',
     styleUrls: ['./input.component.scss'],
-    changeDetection: ChangeDetectionStrategy.OnPush,
+    changeDetection: ChangeDetectionStrategy.OnPush
 })
 export class InputComponent implements ControlValueAccessor {
     @Input() public type: string = 'text';

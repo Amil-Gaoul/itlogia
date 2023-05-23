@@ -21,8 +21,8 @@ import { CommonModule } from '@angular/common';
                 color: $button;
                 cursor: pointer;
             }
-        `,
+        `
     ],
-    changeDetection: ChangeDetectionStrategy.OnPush,
+    changeDetection: ChangeDetectionStrategy.OnPush
 })
 export class ButtonComponent {}

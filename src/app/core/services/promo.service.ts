@@ -7,7 +7,7 @@ import { Promo } from '../models';
 import { DELAY } from '../constants';
 
 @Injectable({
-    providedIn: 'root',
+    providedIn: 'root'
 })
 export class PromoService {
     constructor(private httpCLient: HttpClient) {}

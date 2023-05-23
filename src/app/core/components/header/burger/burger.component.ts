@@ -7,7 +7,7 @@ import { CommonModule, DOCUMENT } from '@angular/common';
     imports: [CommonModule],
     templateUrl: './burger.component.html',
     styleUrls: ['./burger.component.scss'],
-    changeDetection: ChangeDetectionStrategy.OnPush,
+    changeDetection: ChangeDetectionStrategy.OnPush
 })
 export class BurgerComponent {
     public toggle: boolean;
