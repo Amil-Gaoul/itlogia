@@ -1,4 +1,4 @@
-import { Directive, EventEmitter, HostListener, Input } from '@angular/core';
+import { Directive, HostListener, Input } from '@angular/core';
 
 @Directive({
     selector: '[itRemoveDot]',

@@ -1,14 +1,13 @@
-import { Dialog, DialogModule, DialogRef } from '@angular/cdk/dialog';
+import { Dialog, DialogModule } from '@angular/cdk/dialog';
+import { CommonModule } from '@angular/common';
 import { ChangeDetectionStrategy, Component, DestroyRef, inject, OnInit } from '@angular/core';
 import { takeUntilDestroyed } from '@angular/core/rxjs-interop';
-import { CommonModule } from '@angular/common';
-import { AbstractControl, FormBuilder, FormGroup, FormsModule, ReactiveFormsModule, Validators, ValidationErrors, ValidatorFn } from '@angular/forms';
+import { AbstractControl, FormBuilder, FormGroup, FormsModule, ReactiveFormsModule, Validators } from '@angular/forms';
 
-import { Subscription } from 'rxjs';
+import { Order } from '@core/models';
+import { OrderService } from '@core/services';
+import { ButtonComponent, InputComponent } from '@shared/components';
 
-import { ButtonComponent, InputComponent } from './../../../../shared/components';
-import { OrderService } from './../../../../core/services';
-import { Order } from './../../../../core/models';
 import { OrderForm } from './order-form.model';
 import { SuccessDialogComponent } from './success-dialog/success-dialog.component';
 
@@ -46,10 +45,10 @@ export class OrderComponent implements OnInit {
             this.orderService
                 .orderPizza(order)
                 .pipe(takeUntilDestroyed(this.destroyRef))
-                .subscribe((order: Order): void => {
+                .subscribe((data: Order): void => {
                     this.isRequest = false;
                     this.form.reset();
-                    this.dialog.open(SuccessDialogComponent, { data: order });
+                    this.dialog.open(SuccessDialogComponent, { data });
                 });
         }
     }

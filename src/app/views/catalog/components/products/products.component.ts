@@ -1,12 +1,13 @@
-import { ChangeDetectionStrategy, Component } from '@angular/core';
 import { CommonModule } from '@angular/common';
+import { ChangeDetectionStrategy, Component } from '@angular/core';
 
-import { Observable, tap } from 'rxjs';
 import { IAlbum, Lightbox, LightboxModule } from 'ngx-lightbox';
+import { Observable, tap } from 'rxjs';
+
+import { Product } from '@core/models';
+import { ProductService } from '@core/services';
 
 import { ProductComponent } from './product/product.component';
-import { Product } from './../../../../core/models';
-import { ProductService } from './../../../../core/services';
 
 @Component({
     selector: 'it-products',
@@ -22,6 +23,7 @@ export class ProductsComponent {
             this.album = products.map((product: Product): IAlbum => ({ src: product.imageUrl, caption: product.title, thumb: product.imageUrl }));
         })
     );
+
     private album: IAlbum[];
 
     constructor(private productsService: ProductService, private lightbox: Lightbox) {}

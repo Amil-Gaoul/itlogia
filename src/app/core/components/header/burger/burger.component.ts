@@ -1,5 +1,5 @@
-import { ChangeDetectionStrategy, Component, Inject, Renderer2 } from '@angular/core';
 import { CommonModule, DOCUMENT } from '@angular/common';
+import { ChangeDetectionStrategy, Component, Inject, Renderer2 } from '@angular/core';
 
 @Component({
     selector: 'it-burger',

@@ -1,8 +1,8 @@
-import { ChangeDetectionStrategy, Component, Input } from '@angular/core';
 import { CommonModule } from '@angular/common';
+import { ChangeDetectionStrategy, Component, Input } from '@angular/core';
 
-import { SvgIconComponent } from './../../../../../shared/components';
-import { Promo } from './../../../../../core/models';
+import { Promo } from '@core/models';
+import { SvgIconComponent } from '@shared/components';
 
 @Component({
     selector: 'it-promo-item',

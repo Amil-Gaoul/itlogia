@@ -1,10 +1,10 @@
 import { HttpClient } from '@angular/common/http';
 import { Injectable } from '@angular/core';
 
-import { Observable, delay } from 'rxjs';
+import { delay, Observable } from 'rxjs';
 
-import { Product } from '../models';
-import { DELAY } from '../constants';
+import { DELAY } from '@core/constants';
+import { Product } from '@core/models';
 
 @Injectable({
     providedIn: 'root'

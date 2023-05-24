@@ -1,11 +1,11 @@
-import { ChangeDetectionStrategy, Component, HostBinding } from '@angular/core';
 import { CommonModule } from '@angular/common';
+import { ChangeDetectionStrategy, Component } from '@angular/core';
 
 @Component({
     selector: 'it-button, [itButton]',
     standalone: true,
     imports: [CommonModule],
-    template: ` <ng-content></ng-content> `,
+    template: ' <ng-content></ng-content> ',
     styles: [
         `
             @import 'variables';

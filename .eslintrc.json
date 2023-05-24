@@ -14,8 +14,6 @@
                 "eslint:recommended",
                 "plugin:@typescript-eslint/recommended",
                 "plugin:@typescript-eslint/recommended-requiring-type-checking",
-                "plugin:@angular-eslint/ng-cli-compat",
-                "plugin:@angular-eslint/ng-cli-compat--formatting-add-on",
                 "plugin:prettier/recommended",
                 "prettier"
             ],
@@ -145,9 +143,9 @@
                 "jsdoc/newline-after-description": 0,
                 "id-blacklist": "off",
                 "id-match": "off",
-                "import/first": "error",
-                "import/newline-after-import": "error",
-                "import/no-duplicates": "error",
+                "import/first": "off",
+                "import/newline-after-import": "off",
+                "import/no-duplicates": "off",
                 "import/order": "off",
                 "linebreak-style": ["error", "windows"],
                 "lines-between-class-members": [

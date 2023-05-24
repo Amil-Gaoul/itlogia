@@ -1,9 +1,9 @@
-import { Component } from '@angular/core';
 import { CommonModule } from '@angular/common';
+import { Component } from '@angular/core';
 import { RouterOutlet } from '@angular/router';
 
-import { ButtonComponent } from './shared/components';
 import { HeaderComponent } from './core/components';
+import { ButtonComponent } from './shared/components';
 
 @Component({
     selector: 'it-root',

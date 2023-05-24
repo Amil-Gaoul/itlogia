@@ -1,9 +1,10 @@
-import { ChangeDetectionStrategy, Component, Input, ChangeDetectorRef } from '@angular/core';
 import { CommonModule } from '@angular/common';
+import { ChangeDetectionStrategy, ChangeDetectorRef, Component, Input } from '@angular/core';
 import { ControlValueAccessor, FormsModule, NG_VALUE_ACCESSOR } from '@angular/forms';
 
-import { provideNgxMask, NgxMaskDirective } from 'ngx-mask';
-import { RemoveDotDirective } from '../../directives';
+import { NgxMaskDirective, provideNgxMask } from 'ngx-mask';
+
+import { RemoveDotDirective } from '@shared/directives';
 
 @Component({
     selector: 'it-input',

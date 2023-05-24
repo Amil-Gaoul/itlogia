@@ -1,10 +1,9 @@
-import { ChangeDetectionStrategy, Component, Inject } from '@angular/core';
-import { CommonModule } from '@angular/common';
 import { DIALOG_DATA } from '@angular/cdk/dialog';
+import { CommonModule } from '@angular/common';
+import { ChangeDetectionStrategy, Component, Inject } from '@angular/core';
 
-import { DialogComponent } from './../../../../../shared/components';
-import { SvgIconComponent } from './../../../../../shared/components';
-import { Order } from 'src/app/core/models';
+import { Order } from '@core/models';
+import { DialogComponent, SvgIconComponent } from '@shared/components';
 
 @Component({
     selector: 'it-success-dialog',

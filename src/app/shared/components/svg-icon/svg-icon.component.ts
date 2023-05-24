@@ -1,13 +1,13 @@
-import { ChangeDetectionStrategy, Component, ElementRef, HostBinding, Input } from '@angular/core';
 import { CommonModule } from '@angular/common';
+import { ChangeDetectionStrategy, Component, ElementRef, HostBinding, Input } from '@angular/core';
 
-import { IconRegistryService } from './../../../core/services';
+import { IconRegistryService } from '@core/services';
 
 @Component({
     selector: 'it-svg-icon',
     standalone: true,
     imports: [CommonModule],
-    template: `<ng-content></ng-content>`,
+    template: '<ng-content></ng-content>',
     styles: [
         `
             :host {

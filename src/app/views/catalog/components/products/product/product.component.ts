@@ -1,8 +1,8 @@
-import { ChangeDetectionStrategy, Component, EventEmitter, Input, Output } from '@angular/core';
 import { CommonModule } from '@angular/common';
+import { ChangeDetectionStrategy, Component, EventEmitter, Input, Output } from '@angular/core';
 
-import { Product } from '../../../../../core/models';
-import { ButtonComponent } from '../../../../../shared/components';
+import { Product } from '@core/models';
+import { ButtonComponent } from '@shared/components';
 
 @Component({
     selector: 'it-product',
